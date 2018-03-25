@@ -1,0 +1,73 @@
+.body{
+    background-color:#dbe0df !important;
+}
+
+.masthead{
+    background:  linear-gradient(rgba(116, 1, 1, 0.45), rgba(158, 2, 124, 0.45)), url("../img/forest1.jpeg");
+    height:100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-secondary {
+    background-color: white; important!
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: black;
+}
+
+#parallax-1 { 
+    /* The image used */
+    background-image: url("../img/forest1.jpeg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-2 { 
+    /* The image used */
+    background-image: url("../img/sunset-summer.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parking-map{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact{
+    text-align:center;
+}
+
+#headshot{
+    width:100%;
+}
+
+.btn-info-light{
+    border: 1px solid;
+    color:#17a2b8;
+}
+
+.fa-external-link{
+    color:white;
+}
