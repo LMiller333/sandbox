@@ -1,9 +1,21 @@
+:root {
+    --light-bg-color: #eef1f5;
+    --dark-bg-color:#64788e;
+    --dark-text:#2c3e50;
+    --light-text:#dafdb9;
+  }
+
 .body{
-    background-color:#dbe0df !important;
+    background-color: var(--light-bg-color) !important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    font-size: 1.25rem;
 }
 
 .masthead{
-    background:  linear-gradient(rgba(116, 1, 1, 0.45), rgba(158, 2, 124, 0.45)), url("../img/forest1.jpeg");
+    background:  linear-gradient(rgba(52, 78, 78, 0.45), rgba(36, 54, 43, 0.45)), url("../img/forest1.jpeg");
     height:100vh;
 
     background-attachment: fixed;
@@ -12,12 +24,41 @@
     background-size: cover;
 }
 
-.bg-secondary {
-    background-color: white; important!
+header.masthead h1 {
+    font-family: 'Trocchi', serif;
+}
+
+h2{
+    font-family: 'Trocchi', serif;
+    padding-bottom: 1rem;
+}
+
+h3{
+    font-family: 'Trocchi', serif;
+    padding-bottom: 0rem;
+    padding-top:1rem;
+}
+
+.bg-light p{
+    color:var(--dark-text) !important;
+}
+
+.bg-light {
+    background-color: var(--light-bg-color) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-bg-color) !important;
+}
+
+section{
+    background-color: var(--light-bg-color) !important;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: black;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align:center;
 }
 
 #parallax-1 { 
@@ -50,9 +91,14 @@
 
 #parking-map{
     width: 90%;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+.hide-map{
+    display:none;
 }
 
 #contact{
@@ -70,4 +116,56 @@
 
 .fa-external-link{
     color:white;
+}
+
+.copyright {
+    background-color: #778899;
+}
+
+#mainNav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#mainNav .container {
+    display: flex;
+    justify-content: center;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover{
+    color:var(--light-text);
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+    color: var(--dark-text);
+    background-color:var(--light-text);
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.focus {
+    color: var(--dark-text);
+    background-color:var(--light-text);
+}
+
+.img-gallery{
+    max-width:300px;
+}
+
+p a{
+    color:#599006;
+    text-decoration:underline;
+}
+
+#map-btn{
+    border-width: 2px;
+    border-color:var(--dark-bg-color);
+    color:var(--dark-bg-color);
+}
+
+.btn-info{
+    background-color: var(--dark-bg-color);
+    border-color:var(--dark-bg-color);
+}
+
+.picture-row{
+    padding-bottom:2rem;
 }
