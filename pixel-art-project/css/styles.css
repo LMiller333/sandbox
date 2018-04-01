@@ -1,0 +1,74 @@
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+    color:red;
+  }
+  
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
+    color:green;
+  }
+
+.form-item{
+    display:block;
+}
+
+#grid-x,#grid-y{
+    width:100px;
+}
+
+table {
+    border-collapse: collapse;
+    background-image:none;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    margin: 0px auto;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+td{
+    width:15px;
+    height:15px;
+    background-color:none;
+}
+
+.container{
+    padding: 30px;
+    margin:15px;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+button{
+    margin-top:15px !important;
+    background-color:rgb(247, 6, 146);
+}
+
+.bg-1{
+    background-color:rgb(156, 156, 252);
+}
+
+.bg-2{
+    background-color:rgb(198, 250, 191);
+}
+
+.bg-3{
+    background-color:rgb(250, 231, 169);
+}
+
+.instructions{
+    font-style:italic;
+    font-size:0.75rem;
+}
+
+h1{
+    font-family: 'Monofett', cursive !important;
+    font-size:4rem !important;
+}
