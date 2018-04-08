@@ -15,7 +15,7 @@ p{
 }
 
 .masthead{
-    background:  linear-gradient(rgba(52, 78, 78, 0.0), rgba(36, 54, 43, 0.0)), url("../img/forest1.jpeg");
+    background:  linear-gradient(rgba(165, 197, 197, 0.4), rgba(156, 196, 171, 0.4)), url("../img/forest1.jpeg");
     height:100vh;
     min-height:600px;
 
@@ -188,7 +188,5 @@ p a{
 .masthead-overlay{
     background-color: rgba(255,255,255,0.6);
     color:black;
-    padding:5rem;
-    margin-top:2rem;
-    margin-bottom:1rem;
+    padding:3rem;
 }
