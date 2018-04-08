@@ -15,7 +15,7 @@ p{
 }
 
 .masthead{
-    background:  linear-gradient(rgba(52, 78, 78, 0.45), rgba(36, 54, 43, 0.45)), url("../img/forest1.jpeg");
+    background:  linear-gradient(rgba(52, 78, 78, 0.0), rgba(36, 54, 43, 0.0)), url("../img/forest1.jpeg");
     height:100vh;
 
     background-attachment: fixed;
@@ -168,4 +168,10 @@ p a{
 
 .picture-row{
     padding-bottom:2rem;
+}
+
+.banner-text{
+    background-color: rgba(255,255,255,0.6);
+    color:black;
+    padding:2rem;
 }
