@@ -17,6 +17,7 @@ p{
 .masthead{
     background:  linear-gradient(rgba(52, 78, 78, 0.0), rgba(36, 54, 43, 0.0)), url("../img/forest1.jpeg");
     height:100vh;
+    min-height:600px;
 
     background-attachment: fixed;
     background-position: center;
@@ -63,7 +64,7 @@ section{
 
 #parallax-1 { 
     /* The image used */
-    background-image: url("../img/forest1.jpeg");
+    background-image: url("../img/roots.jpg");
 
     /* Set a specific height */
     height: 500px; 
@@ -76,6 +77,20 @@ section{
 }
 
 #parallax-2 { 
+    /* The image used */
+    background-image: url("../img/sunset-summer.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-3 { 
     /* The image used */
     background-image: url("../img/sunset-summer.jpg");
 
@@ -170,8 +185,10 @@ p a{
     padding-bottom:2rem;
 }
 
-.banner-text{
+.masthead-overlay{
     background-color: rgba(255,255,255,0.6);
     color:black;
-    padding:2rem;
+    padding:5rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
 }
