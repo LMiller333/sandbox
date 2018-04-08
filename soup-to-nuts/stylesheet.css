@@ -35,7 +35,7 @@ nav #mobileNav{
 }
 
 #contact-link{
-  background-color:rgba(252, 222, 92, 0.7);
+  background-color:rgba(214, 210, 98, 0.7);
 }
 
 .navbar-expand .navbar-nav {
@@ -113,7 +113,7 @@ h2{
   text-align:center;
   margin: 1rem 0 auto;
   font-size:3rem;
-  padding:1rem 0rem;
+  padding:3rem 0rem;
 }
 
 h3{
@@ -126,14 +126,14 @@ h3{
 }
 
 #fw-test{
-  background-color:#725369;
+  background-color:rgba(41, 57, 82, 1.0);
   color:white;
   margin:2rem 0rem;
   padding:2rem;
 }
 
 #fw-serv{
-  background-color: rgba(252, 222, 92, 0.7);
+  background-color: rgba(214, 210, 98, 1.0);
   color: black;
   margin:2rem 0rem;
   padding:2rem;
@@ -142,7 +142,7 @@ h3{
 
 .btn{
   color:black;
-  border-radius:25px;
+  border-radius:0px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
 }
@@ -154,19 +154,23 @@ h3{
   margin:0;
 }
 
+#about{
+  margin-bottom:5rem;
+}
+
 .jumbotron .btn:hover{
   background-color:#E0E8EB;
 }
 
-#services .btn{
-    margin-bottom:1.5rem;
-    margin-top:1.5rem;
-    background-color:#D2CF88;
-    border:none;
+.btn-services{
+  background-color:rgba(214, 210, 98, 1.0);
+  border:none;
+  margin: 3rem 0;
 }
 
-#services .btn:hover{
-  background-color:#F6BB7B;
+.btn-services:hover{
+  background-color:rgb(94, 24, 70);
+  border:none;
 }
 
 .md-form label{
