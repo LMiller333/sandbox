@@ -39,7 +39,10 @@ td{
 
 .container{
     padding: 30px;
-    margin:15px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input{
@@ -47,20 +50,20 @@ input{
 }
 
 button{
-    margin-top:15px !important;
-    background-color:rgb(247, 6, 146);
+    margin-top:15px ;
+    margin-bottom:15px ;
 }
 
 .bg-1{
-    background-color:rgb(156, 156, 252);
+    background-color:rgb(222, 222, 228);
 }
 
 .bg-2{
-    background-color:rgb(198, 250, 191);
+    background-color:rgb(222, 222, 228);
 }
 
 .bg-3{
-    background-color:rgb(250, 231, 169);
+    background-color:rgb(252, 236, 184);
 }
 
 .instructions{
@@ -68,7 +71,45 @@ button{
     font-size:0.75rem;
 }
 
-h1{
-    font-family: 'Monofett', cursive !important;
-    font-size:4rem !important;
+.display-font{
+    font-family: 'Monofett', cursive;
+    font-size:4rem;
+    color: #b9189b;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif ;
+    font-weight:bold ;
+}
+
+h3{
+    font-size:1.5rem ;
+    margin-top:1rem;
+}
+
+
+p{
+    font-family: 'Open Sans', sans-serif ;
+}
+
+#background-image{
+    width:75%;
+}
+
+.or-option{
+    font-weight:bold;
+    font-size:2rem;
+}
+
+.tagline{
+    font-weight:bold;
+    font-size:1.5rem;
+}
+
+#img-toggle-btn{
+    display:none;
+}
+
+.show-hide-img{
+    background-image:none !important;
 }

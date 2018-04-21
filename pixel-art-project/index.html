@@ -4,27 +4,33 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Lindsay's Pixel Art Maker V2</title>
+  <title>Lindsay's Pixel Art Maker</title>
   <meta name="description" content="This browser tool lets you build a grid, pick a color, and build beautiful graphics!">
   <meta name="author" content="Lindsay Miller">
 
   
 <!--Links to stylesheets -->
-
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Barrio|Monofett" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monofett|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
 
 
-    <h1>Lindsay's Pixel Art Maker</h1>
+    <h1 class="text-center display-font">Lindsay's Pixel Art Maker</h1>
+    <p class="tagline text-center">Because everyone can be an artist with the right tools.</p>
+    <p class="text-center"><em>Need some inspiration? Add a <a href="#inspiration">background image</a> before you begin painting!</em></p>
 
     <!--Pick grid dimenstions -->
 
     <div class="container bg-1">
-        <h2>Choose a grid size</h2>
+        <h2><i class="fa fa-expand-arrows-alt"></i>  Choose a canvas size</h2>
         <p class="instructions">Enter a value between 1 and 100 for both width and height. The default is 25x25.</p>
         
         <form id="grid-builder" action="#step-2">
@@ -47,37 +53,38 @@
             
             <!--Submit grid dimensions-->
             <div class="form-item text-center">
-                <button class="build-grid-btn" type="button">Set Size</button>
+                <button class="build-grid-btn btn btn-info" type="button">Update Size</button>
             </div>
 
         </form>
     </div>
 
     
-    <div class="container bg-2">
+    <div class="container bg-1">
+            <h2><i class="fa fa-paint-brush"></i>  Choose your tools</h2>
         <div class="row">
             <div class="col-md-6">
             <!--Choose technique -->
-                <h2>Choose a technique</h2>
-                <p class="instructions">In Click Mode, click on the square to color it. Clicking again will clear the color. In Free Draw Mode, roll your mouse over the squares to draw.</p>
+                <h3>Select a technique</h3>
+                <p class="instructions">In Click &amp; Drag mode, click and drag to color the squares. Clicking on a cell again will clear the color. In Free Draw mode, roll your mouse over the squares to draw.</p>
                 <form id="draw-method">
                     <div class="form-item">
                         <input id="click-method" type="radio" name="draw-method" value="click" checked required>
-                        <label for="click-method">Click Mode</label>
+                        <label for="click-method">Click</label>
                         <input id="free-method" type="radio" name="draw-method" value="mouseover">
-                        <label for="free-method">Free Draw Mode</label>
+                        <label for="free-method">Free Draw</label>
                     </div>
                 </form>
             </div>
             <div class="col-md-6">
             <!--Pick color -->
 
-                <h2>Choose a color</h2>
+                <h3>Select a color</h3>
                 <p class="instructions">Think of this step as dipping your brush in the paint. To change the color that you are painting with, just select a new color!</p>
                 <form id="color-picker">
                     <div class="form-item">
                         <label for="paint-color">Click to select a new color:</label>
-                        <input id="paint-color" type="color" value="#ff1234"> 
+                        <input id="paint-color" type="color" value="#b9189b"> 
                     </div>
                 </form>
             </div>
@@ -89,26 +96,38 @@
 
  <!--Space for the actual grid/canvas -->
     
-    <div class="container canvas-area bg-light text-center">
+    <div id="canvas-area" class="container canvas-area bg-light text-center">
+        <h2 class="display-font">Your beautiful creation</h2>
+        <button id="clear-colors-btn" class="btn btn-warning" type="button">Clear all colors</button>
+        <!-- <a href="index.html"><button id="start-over-btn" class="btn btn-warning" type="button">Start over</button></a> -->
+        <button id="save-btn" class= "btn btn-info" type="button">Print image</button>
+
         <table id="canvas" class="cursor">
         </table>
-
+        <button id="img-toggle-btn" class="btn btn-secondary" type="button">Show/Hide Background Image</button>
     </div>
 
     <div class="container bg-3">
-        <h2>Need some help?</h2>
-        <p class="instructions">You can upload a background photo to guide your painting! Please provide the complete URL to a .jpg, .jpeg, or .png photo.</p>
+        <h2 id="inspiration"><i class="fa fa-lightbulb"></i>  Need some inspiration?</h2>
+        <p class="instructions">Generate a random background image for your grid to use as a guide, or enter your own URL. Accepted file types include PNG, SVG, JPG, GIF, &amp; WEBP.</p>
+        
+        <div class="form-item text-center">
+            <button id="random-img-btn" class="btn btn-info" type="button">Generate Random Image</button>
+        </div>
+        <p class="or-option text-center">OR</p>
+
         <div class="form-item">
-                <label for="background-image">URL for photo:</label>
-                <input id="background-image" type="text" name="background-image"><br>
+                <label for="background-image">Use your own URL:</label>
+                <input id="background-image" type="text" name="background-image" placeholder="Paste image URL here" required>
             </div>
             
             <!--Submit grid dimensions-->
-            <div class="form-item">
-                <button class="img-link-btn" type="button">Pull in image</button>
-                <button class="clear-img-btn" type="button">Clear image</button>
+            <div class="form-item text-center">
+                <button id="clear-img-btn" class="btn btn-light" type="button">Clear image</button>
+                <button id="img-link-btn" class="btn btn-info" type="button">Add/Update Image</button>
             </div>
     </div>
+
 
 
 
@@ -116,6 +135,7 @@
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/html2canvas.min.js"></script>
   
 </body>
 </html>
