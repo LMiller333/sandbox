@@ -32,14 +32,19 @@
     <a class="skip-main" href="#main">Skip to main content</a>
 
     <!--NAV BAR-->
-    <nav class="navbar navbar-inverse navbar-expand-sm">
+    <nav class="navbar navbar-inverse navbar-expand-md">
         <div class="container-fluid">
-          <ul class="nav navbar-nav mx-auto">
-            <li class="nav-item slash-after"><a class="nav-link" href="#about">WHO I AM</a></li>
-            <li class="nav-item slash-after"><a class="nav-link" href="#services">WHAT I DO</a></li>
-            <li class="nav-item slash-after"><a class="nav-link" href="#testimonials">WHAT THEY SAY</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">GET IN TOUCH</a></li>
-          </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span>MENU <i class="fa fa-angle-down"></i></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav mx-auto">
+              <li class="nav-item slash-after"><a class="nav-link" href="#about">WHO I AM</a></li>
+              <li class="nav-item slash-after"><a class="nav-link" href="#services">WHAT I DO</a></li>
+              <li class="nav-item slash-after"><a class="nav-link" href="#testimonials">WHAT THEY SAY</a></li>
+              <li class="nav-item "><a class="nav-link get-in-touch" href="#contact">GET IN TOUCH</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -122,7 +127,7 @@
      
         </div>
         <div class="text-center">
-            <a class="btn btn-primary btn-lg btn-services" href="#contact">Let Me Help You</a>
+            <a class="btn btn-primary btn-lg btn-services" href="#contact">I could use help!</a>
           </div>
       </div>
       </div>
@@ -195,12 +200,9 @@
                   <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
                       <label class="sr-only" data-error="wrong" data-success="right" for="form34">Phone</label>
-                      <input type="tel" id="formPhone" name="formPhone" class="form-control validate" placeholder="Your phone">
-                  </div>
+                      <input type="tel" id="formPhone" name="formPhone" class="form-control validate" placeholder="Your phone">               
+                    </div>
               </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-            <input class="btn" type="submit" value="Send">
         </div>
       </div>
         

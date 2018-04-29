@@ -6,7 +6,7 @@ body{
   overflow-y: scroll; /* has to be scroll, not auto */
   overflow-x:hidden;
   -webkit-overflow-scrolling: touch;
-  background-color:#4d324d;
+  background-color:#5d5363;
   color:white;
 }
 
@@ -22,10 +22,16 @@ p{
   color:white;
 }
 
-.slash-after:after{
-  content: " / ";
-  display:inline;
-  padding: .5rem 1rem;
+.navbar-toggler{
+  color:white;
+  font-weight:bold;
+  width: 100%;
+  float:none;
+  margin-right:0;
+}
+
+.get-in-touch{
+  color: #ec7e33;
 }
 
 .jumbotron {
@@ -115,9 +121,11 @@ h3{
 }
 
 .btn-services{
-  background-color:rgba(214, 210, 98, 1.0);
+  background-color:rgb(255, 255, 255);
   border:none;
   margin: 3rem 0;
+  font-size:1.5em;
+  font-weight:bold;
 }
 
 .btn-services:hover{
@@ -247,3 +255,13 @@ a.skip-main:focus, a.skip-main:active {
     font-size:7em;
   }
 }
+
+@media (min-width: 768px) { 
+.slash-after:after{
+  content: " / ";
+  display:inline;
+  padding: .5rem 1rem;
+}
+
+)
+
