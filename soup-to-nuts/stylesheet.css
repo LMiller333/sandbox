@@ -208,8 +208,85 @@ a.skip-main:focus, a.skip-main:active {
   z-index:999;
 }
 
+/* (min-aspect-ratio: 7/6) and */
 
-@media (min-aspect-ratio: 6/5) and (min-width: 1000px) {
+@media  (min-width: 500px) {
+  .jumbotron {
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0), rgba(255, 255, 255,0.5)),url(images/spaghetti.jpeg);
+    background-color: white;
+    background-size: auto 140%;
+    background-position: left -3rem bottom -1rem;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    position: relative;
+}
+
+.jumbotron-text {
+  position: absolute;
+  padding-left: 50%;
+  padding-right:1em;
+  bottom: 0;
+  text-align: center;
+}
+
+.jumbotron h2{
+  padding:1em 0em;
+  font-size:1em;
+  margin:0;
+}
+
+
+.jumbotron h1{
+  font-size:3.5em;
+  margin:0;
+  font-family:'Pacifico', Sans-serif;
+  padding-bottom:0em;
+}
+
+.jumbotron img{
+  display:none;
+}
+}
+
+@media  (min-width: 700px) {
+  .jumbotron {
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0), rgba(255, 255, 255,0.5)),url(images/spaghetti.jpeg);
+    background-color: white;
+    background-size: auto 140%;
+    background-position: left 1rem bottom -1rem;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    position: relative;
+}
+
+.jumbotron-text {
+  position: absolute;
+  padding-left: 50%;
+  padding-right:1em;
+  bottom: 0;
+  text-align: center;
+}
+
+.jumbotron h2{
+  padding:1em 0em;
+  font-size:1em;
+  margin:0;
+}
+
+
+.jumbotron h1{
+  font-size:4.5em;
+  margin:0;
+  font-family:'Pacifico', Sans-serif;
+  padding-bottom:0em;
+}
+
+.jumbotron img{
+  display:none;
+}
+}
+
+@media (min-aspect-ratio: 7/6) and (min-width: 950px) {
   .jumbotron {
     background-image: url(images/spaghetti.jpeg);
     background-color: white;
