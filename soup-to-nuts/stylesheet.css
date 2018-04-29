@@ -41,7 +41,7 @@ p{
 }
 
 .jumbotron-text {
-  color: black;
+  color: #322d35;
   text-align: center;
   padding:2em 0.5em;
 }
@@ -85,14 +85,14 @@ h3{
 
 #fw-test{
   background-color:white;
-  color:black;
+  color:#322d35;
   margin:2rem 0rem;
   padding:2rem;
 }
 
 #fw-serv{
   background-color: white;
-  color: black;
+  color:#322d35;
   margin:2rem 0rem;
   padding:2rem;
 }
@@ -107,7 +107,7 @@ h3{
 
 .jumbotron .btn{
   background-color:white;
-  color:black;
+  color:#322d35;
   border:none;
   margin:0;
 }
@@ -222,7 +222,6 @@ a.skip-main:focus, a.skip-main:active {
 }
   
   .jumbotron-text {
-    color: black;
     position: absolute;
     padding-left: 50%;
     padding-right:1em;
