@@ -1,13 +1,14 @@
 :root {
     --light-bg-color: #eef1f5;
-    --dark-bg-color:#64788e;
+    --dark-bg-color:#343438;
     --dark-text:#2c3e50;
-    --light-text:#dafdb9;
+    --light-text:#f0fde4;
+    --accent-color-1:rgb(1, 101, 141);
   }
 
 .body{
     background-color: var(--light-bg-color) !important;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 p{
@@ -38,6 +39,7 @@ h3{
     font-family: 'Trocchi', serif;
     padding-bottom: 0rem;
     padding-top:1rem;
+    margin-bottom:1em;
 }
 
 .bg-light p{
@@ -58,7 +60,7 @@ section{
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align:center;
 }
 
@@ -134,7 +136,7 @@ section{
 }
 
 .copyright {
-    background-color: #778899;
+    background-color: var(--dark-bg-color);
 }
 
 #mainNav {
@@ -147,18 +149,19 @@ section{
     justify-content: center;
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:hover{
-    color:var(--light-text);
+#mainNav .navbar-nav li.nav-item a.nav-link:hover, .methods-dropdown:hover{
+    text-decoration:underline;
+    color:white;
 }
 
-#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
-    color: var(--dark-text);
-    background-color:var(--light-text);
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active, .methods-dropdown:active {
+    color:white;
 }
 
-#mainNav .navbar-nav>li.nav-item>a.nav-link.focus {
-    color: var(--dark-text);
-    background-color:var(--light-text);
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus, .methods-dropdown:focus {
+    /* border: solid 1px var(--light-text);
+    box-shadow: 0 0 10px #719ECE; */
+    color:white;
 }
 
 .img-gallery{
@@ -166,7 +169,7 @@ section{
 }
 
 p a{
-    color:#599006;
+    color:var(--accent-color-1);
     text-decoration:underline;
 }
 
@@ -175,6 +178,7 @@ p a{
     border-color:var(--dark-bg-color);
     color:var(--dark-bg-color);
 }
+
 
 .btn-info{
     background-color: var(--dark-bg-color);
@@ -189,4 +193,31 @@ p a{
     background-color: rgba(255,255,255,0.6);
     color:black;
     padding:3rem 0 3rem 0;
+}
+
+.btn-methods{
+    background-color:var(--dark-bg-color);
+    color:var(--light-text);
+    margin:0.25em;
+}
+
+
+
+.approach-nav-link{
+    padding-right:0em !important;
+}
+
+.dropdown .nav-link{
+    padding-right:1em !important;
+}
+
+@media screen and (max-width:991px){
+    .dropdown{
+        display:none;
+    }
+}
+
+.btn:hover{
+    background-color:var(--accent-color-1);
+    color:white;
 }
