@@ -2,8 +2,9 @@
     --light-bg-color: #eef1f5;
     --dark-bg-color:#343438;
     --dark-text:#2c3e50;
-<<<<<<< HEAD
     --light-text:#eef1f5;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
     --light-text:#eef1f5;
@@ -11,6 +12,7 @@
     --light-text:#f0fde4;
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
     --accent-color-1:rgb(1, 101, 141);
   }
 
@@ -23,14 +25,16 @@ p {
     font-size: 1.25rem;
     max-width: 760px;
     margin: auto;
-<<<<<<< HEAD
     margin-bottom:1em;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
     margin-bottom:1em;
 =======
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 }
 
 .masthead{
@@ -85,7 +89,10 @@ section{
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 #mainNav{
     padding-top:0 !important;
     padding-bottom:0 !important;
@@ -93,9 +100,12 @@ section{
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 #parallax-1 {
     /* The image used */
     background-image: url("../img/roots.jpg");
@@ -170,6 +180,11 @@ section{
 .copyright {
     background-color: var(--dark-bg-color);
 <<<<<<< HEAD
+}
+
+
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -181,13 +196,13 @@ section{
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 }
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 
 #mainNav .container {
     display: flex;
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .navbar{
     border-radius:0px;
 }
@@ -201,24 +216,29 @@ section{
     color:white;
 }
 
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 .navbar{
     border-radius:0px;
 }
 
+<<<<<<< HEAD
+=======
 #mainNav .navbar-nav li.nav-item a.nav-link:hover, .methods-dropdown:hover{
     color:white;
     background-color:#5d5d64;
 }
 
 =======
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 #mainNav .navbar-nav li.nav-item a.nav-link:hover, .methods-dropdown:hover{
-    text-decoration:underline;
     color:white;
+    background-color:#5d5d64;
 }
 
->>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active, .methods-dropdown:active {
     color:white;
 }
@@ -260,11 +280,14 @@ p a{
     color:black;
     padding:3rem 0 3rem 0;
 }
+<<<<<<< HEAD
+=======
 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 #methods{
     max-width:760px;
     margin:auto;
@@ -273,9 +296,12 @@ p a{
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
 .btn-methods{
     background-color:var(--dark-bg-color);
     color:var(--light-text);
@@ -283,7 +309,10 @@ p a{
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
     min-width: 45%;
 }
 
@@ -350,6 +379,12 @@ p a{
 }
 
 <<<<<<< HEAD
+.btn:hover{
+    background-color:var(--accent-color-1);
+    color:white;
+}
+=======
+<<<<<<< HEAD
 =======
 =======
 }
@@ -376,3 +411,4 @@ p a{
 }
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
 >>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
+>>>>>>> f25063f3dc22f36dfc37509d998a185ed3ce8fac
