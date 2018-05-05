@@ -5,8 +5,12 @@
 <<<<<<< HEAD
     --light-text:#eef1f5;
 =======
+<<<<<<< HEAD
+    --light-text:#eef1f5;
+=======
     --light-text:#f0fde4;
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
     --accent-color-1:rgb(1, 101, 141);
   }
 
@@ -22,7 +26,11 @@ p {
 <<<<<<< HEAD
     margin-bottom:1em;
 =======
+<<<<<<< HEAD
+    margin-bottom:1em;
+=======
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 }
 
 .masthead{
@@ -75,13 +83,19 @@ section{
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 #mainNav{
     padding-top:0 !important;
     padding-bottom:0 !important;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 #parallax-1 {
     /* The image used */
     background-image: url("../img/roots.jpg");
@@ -157,12 +171,15 @@ section{
     background-color: var(--dark-bg-color);
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 }
 
 #mainNav {
     padding-top: 5px;
     padding-bottom: 5px;
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 }
 
 #mainNav .container {
@@ -170,6 +187,21 @@ section{
     justify-content: center;
 }
 
+<<<<<<< HEAD
+.navbar{
+    border-radius:0px;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover, .methods-dropdown:hover{
+    color:white;
+    background-color:#5d5d64;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active, .methods-dropdown:active {
+    color:white;
+}
+
+=======
 <<<<<<< HEAD
 .navbar{
     border-radius:0px;
@@ -191,6 +223,7 @@ section{
     color:white;
 }
 
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus, .methods-dropdown:focus {
     /* border: solid 1px var(--light-text);
     box-shadow: 0 0 10px #719ECE; */
@@ -229,19 +262,28 @@ p a{
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 #methods{
     max-width:760px;
     margin:auto;
     padding:0;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
 .btn-methods{
     background-color:var(--dark-bg-color);
     color:var(--light-text);
     margin:0.25em;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
     min-width: 45%;
 }
 
@@ -307,6 +349,8 @@ p a{
     }
 }
 
+<<<<<<< HEAD
+=======
 =======
 }
 
@@ -331,3 +375,4 @@ p a{
     color:white;
 }
 >>>>>>> 151f3576e4a2a3a8fe7adea8312162ef026baf20
+>>>>>>> 105aa9ef6bf30ed156b6dc9c7a83ad6ba76ed07c
