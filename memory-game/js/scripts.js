@@ -8,6 +8,7 @@ let starRating;
 let numberMatched;
 let seconds;
 let timeVar;
+let numberClicks;
 
 //Call reset function to load game
 
@@ -23,7 +24,7 @@ $('#resetButton').click(function() {
 
 $('#modalButton').click(function(){
     reset();
-    $('#winnerModal').hide();   
+    $('#winnerModal').hide();  
 });
 
 //Listen to click on card element
@@ -31,7 +32,8 @@ $('#modalButton').click(function(){
 $('.card').click(function(){
 
     //If first click, start timer
-    if (moveCounter === 0 ){
+    numberClicks += 1;
+    if (numberClicks === 1 ){
         timeVar = setInterval(myTimer, 1000);
         seconds = 0;
     }
@@ -48,11 +50,6 @@ $('.card').click(function(){
 
     //Flip card & if two active, check for match
     else {
-        //Increase move counter by one & update html display
-        moveCounter += 1;
-        document.getElementById('numberMoves').innerHTML = moveCounter;
-        console.log('The number of moves is ' + moveCounter);
-
         //Show icons & mark card as active
         $('.back',this).removeClass('d-none');
         $('.back',this).addClass('active');
@@ -86,8 +83,17 @@ function shuffle (array) {
         
 //Check for matches
 function matchCheck(){
+    
+    //Set checkingState to true (to prevent clicks while in checking state) + remove previously mismatched classes
     checkingState=true;
     $('.mis-matched').removeClass('mis-matched');
+
+    //Increase move counter by one & update html display
+    moveCounter += 1;
+    document.getElementById('numberMoves').innerHTML = moveCounter;
+    console.log('The number of moves is ' + moveCounter);
+
+
     let $activeOne = $('.active:eq(0)').html();
     let $activeTwo = $('.active:eq(1)').html();
     console.log('Checking for match between ' + $activeOne + ' and ' + $activeTwo);
@@ -113,19 +119,19 @@ function matchCheck(){
         }
 
         //Adjust star rating
-        if (moveCounter<22){
+        if (moveCounter<17){
             starRating=3;
             $('.fa-star:eq(0)').addClass('star-filled');
             $('.fa-star:eq(1)').addClass('star-filled');
             $('.fa-star:eq(2)').addClass('star-filled');
         }
-        else if (moveCounter>=22 && moveCounter<38){
+        else if (moveCounter>=17 && moveCounter<33){
             starRating=2;
             $('.fa-star:eq(0)').addClass('star-filled');
             $('.fa-star:eq(1)').addClass('star-filled');
             $('.fa-star:eq(2)').removeClass('star-filled');
         }
-        else if (moveCounter>=38){
+        else if (moveCounter>=33){
             starRating=1;
             $('.fa-star:eq(0)').addClass('star-filled');
             $('.fa-star:eq(1)').removeClass('star-filled');
@@ -150,10 +156,10 @@ function myTimer() {
     seconds +=1 ; 
     document.getElementById('timer').innerHTML = seconds;
 }
-
 //Reset function
 
 function reset(){
+    
     //Stop timer
     clearInterval(timeVar);
 
@@ -162,6 +168,7 @@ function reset(){
         $(this).addClass('d-none');
         $(this).parent().removeClass('matched');
         $(this).children().remove();
+        $('.back').removeClass('active'); 
     });
 
     //Shuffle icons
@@ -207,4 +214,5 @@ function reset(){
     seconds = 0;
     document.getElementById('timer').innerHTML = seconds;
     timeVar;
+    numberClicks=0;
 }
